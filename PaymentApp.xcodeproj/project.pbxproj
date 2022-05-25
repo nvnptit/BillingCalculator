@@ -14,6 +14,7 @@
 		799D7D7C283DED0B00FA77FB /* TestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799D7D7B283DED0B00FA77FB /* TestFile.swift */; };
 		799D7D7E283DED0C00FA77FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 799D7D7D283DED0C00FA77FB /* Assets.xcassets */; };
 		799D7D81283DED0C00FA77FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 799D7D7F283DED0C00FA77FB /* LaunchScreen.storyboard */; };
+		799D7D89283E0CC500FA77FB /* ResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799D7D88283E0CC500FA77FB /* ResultController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		799D7D7D283DED0C00FA77FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		799D7D80283DED0C00FA77FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		799D7D82283DED0C00FA77FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		799D7D88283E0CC500FA77FB /* ResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +60,11 @@
 		799D7D70283DED0B00FA77FB /* PaymentApp */ = {
 			isa = PBXGroup;
 			children = (
-				799D7D71283DED0B00FA77FB /* AppDelegate.swift */,
-				799D7D73283DED0B00FA77FB /* SceneDelegate.swift */,
-				799D7D75283DED0B00FA77FB /* ViewController.swift */,
+				799D7D8A283E29E200FA77FB /* Support */,
 				799D7D77283DED0B00FA77FB /* Main.storyboard */,
+				799D7D75283DED0B00FA77FB /* ViewController.swift */,
+				799D7D88283E0CC500FA77FB /* ResultController.swift */,
 				799D7D7D283DED0C00FA77FB /* Assets.xcassets */,
-				799D7D7F283DED0C00FA77FB /* LaunchScreen.storyboard */,
-				799D7D82283DED0C00FA77FB /* Info.plist */,
 				799D7D7A283DED0B00FA77FB /* TestFolder */,
 			);
 			path = PaymentApp;
@@ -76,6 +76,17 @@
 				799D7D7B283DED0B00FA77FB /* TestFile.swift */,
 			);
 			path = TestFolder;
+			sourceTree = "<group>";
+		};
+		799D7D8A283E29E200FA77FB /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				799D7D82283DED0C00FA77FB /* Info.plist */,
+				799D7D7F283DED0C00FA77FB /* LaunchScreen.storyboard */,
+				799D7D73283DED0B00FA77FB /* SceneDelegate.swift */,
+				799D7D71283DED0B00FA77FB /* AppDelegate.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +162,7 @@
 			files = (
 				799D7D76283DED0B00FA77FB /* ViewController.swift in Sources */,
 				799D7D7C283DED0B00FA77FB /* TestFile.swift in Sources */,
+				799D7D89283E0CC500FA77FB /* ResultController.swift in Sources */,
 				799D7D72283DED0B00FA77FB /* AppDelegate.swift in Sources */,
 				799D7D74283DED0B00FA77FB /* SceneDelegate.swift in Sources */,
 			);
@@ -302,17 +314,19 @@
 				DEVELOPMENT_TEAM = 7Z5DWB469U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PaymentApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BillingCalculator;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nvn.PaymentApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nvn.BillingCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -330,17 +344,19 @@
 				DEVELOPMENT_TEAM = 7Z5DWB469U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PaymentApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BillingCalculator;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.nvn.PaymentApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nvn.BillingCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
