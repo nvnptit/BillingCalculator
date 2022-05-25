@@ -32,9 +32,7 @@ class ViewController: UIViewController {
         btn20.isSelected = false
         
         sender.isSelected = true
-        
         tip = Double(String(sender.currentTitle!).dropLast())!/100
-        print("TIPPP: \(tip)")
     }
     
     @IBAction func stepper(_ sender: UIStepper) {
@@ -57,7 +55,6 @@ class ViewController: UIViewController {
             destination1.result = result
             destination1.tip = Int(tip*100)
             destination1.person = Int(person.text!)!
-            print("AAA \(result)   \(tip*100)   \(person.text)")
         }
     }
 }
